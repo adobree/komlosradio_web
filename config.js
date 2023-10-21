@@ -9,10 +9,10 @@
 */
 
 var settings = {
-    'radio_name': 'Dunakanyar FM',
+    'radio_name': 'Komlós Rádió',
 
     // URL of streaming without / on the final, eg: http://streaming.com:8080
-    'url_streaming': 'https://streaming4u.synology.me:8443/DunakanyarFM',
+    'url_streaming': 'https://streaming4u.synology.me:8443/KomlosRadio',
 
     // When choosing icecast, make sure the file 'player.log' in the document root is writeable.
     // Choose between 'shoutcast' or 'icecast'

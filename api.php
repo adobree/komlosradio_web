@@ -154,7 +154,7 @@ if(!empty($url)) {
 
 			if(is_array($ice_stats["icestats"]["source"])) {
 				// !!!!!!! ide kell megadni, hogy hanyadik elemét olvassa a tömbnek
-				$ice_stats_source = $ice_stats["icestats"]["source"][0];
+				$ice_stats_source = $ice_stats["icestats"]["source"][1];
 			} else {
 				$ice_stats_source = $ice_stats["icestats"]["source"];
 			}

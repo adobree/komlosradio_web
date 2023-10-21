@@ -2,7 +2,6 @@
     height: 400px;
     width: 100%;
     position: relative;
-    background-color: aqua;
   }
   .content .images{
     height: 100%;
@@ -49,4 +48,16 @@
     line-height: 41px;
     font-size: 35px;
     color: white;
+  }
+
+  @media(max-width: 500px) {
+    .content {
+      height: 240px;
+    }
+    .right {
+      display: none;
+    }
+    .left {
+      display: none;
+    }
   }
