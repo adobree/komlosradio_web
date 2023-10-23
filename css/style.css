@@ -14,12 +14,13 @@
     --white: #fff;
 }
 
-html, body {
+html,
+body {
     height: 100%;
 }
 
 body {
-    font-family: 'Signika Negative', sans-serif;;
+    font-family: 'Signika Negative', sans-serif;
     display: flex;
     flex-flow: row;
     justify-content: center;
@@ -32,6 +33,7 @@ body {
     color: white;
     text-decoration: none;
 }
+
 .alairas a:hover {
     color: var(--dark);
     background-color: white;
@@ -104,7 +106,7 @@ body {
 
 .cimEsKep {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     padding-bottom: 10px;
 }
 
@@ -118,6 +120,7 @@ body {
 .musrokCim {
     font-size: 22px;
     font-weight: 700;
+    text-align: end;
 }
 
 .musorokCsempe {
@@ -128,8 +131,11 @@ body {
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.3);
-    padding: 10px;
+    padding: 15px;
     margin: 10px;
+    text-align: justify;
+    text-shadow: 1px 1px 2px var(--dark);
+
 }
 
 .main {
@@ -165,18 +171,21 @@ body {
     display: flex;
     justify-content: center;
 }
+
 .fixedCover {
     position: fixed;
     width: 330px;
     margin: 0px;
     bottom: 50px;
 }
+
 .fixedTitle {
     color: var(--white);
     position: fixed;
     left: 10px;
     bottom: 0px;
 }
+
 .fixedPlayButton {
     text-align: center;
 }
@@ -462,12 +471,15 @@ input[type=range]::-ms-thumb {
     .cover-album {
         margin: 10px auto;
         min-width: 150px;
-        min-height: 150px;;
+        min-height: 150px;
+        ;
         height: 150px;
     }
+
     .fixedCover {
         bottom: 60px;
     }
+
     .fixedPlayButton {
         text-align: right;
         margin-right: 10px;
@@ -475,23 +487,29 @@ input[type=range]::-ms-thumb {
         position: fixed;
         right: 0px;
     }
+
     .web-player {
         visibility: hidden;
     }
+
     .fmlogo img {
         display: none;
     }
+
     .musorok {
         display: flex;
         flex-wrap: wrap;
     }
+
     .musorokCsempe {
         width: 100%;
     }
+
     .videoplayer {
         width: 100%;
         height: 200px;
     }
+
     .container {
         padding-bottom: 250px;
     }
@@ -502,21 +520,27 @@ input[type=range]::-ms-thumb {
     .volume-control {
         display: flex;
     }
+
     .volume-icon {
         display: none;
     }
+
     .call-lyrics {
         margin-top: 20px;
     }
+
     .cover-album {
         margin: 10px auto;
         min-width: 200px;
-        min-height: 200px;;
+        min-height: 200px;
+        ;
         height: 200px;
     }
+
     .fixedCover {
         bottom: 60px;
     }
+
     .fmlogo img {
         display: flex;
     }
@@ -549,7 +573,8 @@ input[type=range]::-ms-thumb {
     .cover-album {
         margin: 10px auto;
         min-width: 320px;
-        min-height: 320px;;
+        min-height: 320px;
+        ;
         height: 320px;
     }
 
@@ -562,40 +587,48 @@ input[type=range]::-ms-thumb {
         margin-top: 50px;
         text-align: left;
     }
+
     .fixedPlayButton {
         text-align: center;
         position: relative;
     }
+
     .videoplayer {
         display: flex;
         justify-content: center;
         width: 100%;
         height: 400px;
     }
+
     .container {
         padding-bottom: 400px;
     }
 }
-    @media(min-width: 1000px) {
-        .volume-icon {
-            display: flex;
-        }
-        .musorokCsempe {
-            width: 310px;
-        }
-        .musorok {
-            display: flex;
-            margin-left: 0px;
-            margin-right: 0px;
-            justify-content: center;
-        }
-        .videoplayer {
-            display: flex;
-            justify-content: center;
-            width: 100%;
-            height: 337px;
-        }
-        .container {
-            padding-bottom: 150px;
-        }
+
+@media(min-width: 1000px) {
+    .volume-icon {
+        display: flex;
     }
+
+    .musorokCsempe {
+        width: 310px;
+    }
+
+    .musorok {
+        display: flex;
+        margin-left: 0px;
+        margin-right: 0px;
+        justify-content: center;
+    }
+
+    .videoplayer {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 337px;
+    }
+
+    .container {
+        padding-bottom: 150px;
+    }
+}
